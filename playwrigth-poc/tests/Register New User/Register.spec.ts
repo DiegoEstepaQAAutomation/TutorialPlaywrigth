@@ -1,12 +1,12 @@
 import{test,expect} from '@playwright/test'
-
+import { faker } from '@faker-js/faker';
 
 
 
 test('Register new user',async({page},testInfo) => {
 
 
-  const { faker } = await import('@faker-js/faker');
+  //const { faker } = await import('@faker-js/faker');
 
 
   await page.goto('http://127.0.0.1:5500/register.html');
